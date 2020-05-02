@@ -1,13 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 
+// class App extends Component{
+//     render(){
+//         return(
+//         <React.Fragment>
+//             <label htmlFor="bar">bar</label>
+//             <input type ="text" onChange={()=>{console.log("I am clicked")}}/>
+//         </React.Fragment>
+//         )
+//     }
+// }
 
-function App() {
-  return (
-    <div className="App">
-        <p>
-         hello world
-        </p>
-    </div>
-  )}
+const App = () => {
+    return (
+        <div>
+            <Cat/>
+            <Cat/>
+            <Cat/>
+            <Cat/>
+        </div>
+    )
+}
+
+const Cat = () => {
+    return <div>meow!</div>
+}
 export default App;
