@@ -1,20 +1,26 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 
-const App = () => (<Counter></Counter>)
+// const App = () => (<Counter></Counter>)
 
 
-class Counter extends Component {
+class App extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
             count: 0
         }
+        console.log("constructor")
     }
     handlePlusButton =()=>{
+        console.log("setstate")
         this.setState({count: this.state.count + 1})
+        console.log("setstate done")
+
     }
     handleMinusButton=()=>{
+        console.log("1")
+
         this.setState({count : this.state.count -1})
     }
 
